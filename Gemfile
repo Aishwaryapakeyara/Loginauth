@@ -71,3 +71,5 @@ group :test do
   gem "webdrivers"
 end
 gem "devise"
+
+gem "devise_invitable", "~> 2.0.0"
