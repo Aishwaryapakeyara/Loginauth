@@ -1,0 +1,23 @@
+<h1>Happy Users</h1>
+
+<%= search_form_for @search, remote: true do |f| %>
+  <%= f.label :email_cont, 'Email' %>
+  <%= f.search_field :email_cont %>
+  <%= f.submit %>
+<% end %>
+<br>
+<table>
+<thead>
+<th>Email</th>
+<th>Role</th>
+</thead>
+<tbody>
+<% @users.each do |u| %>
+      <tr>
+        <td><%= u.email %></td>
+        <td><%= u.role.name %></td>
+      </tr>
+    <% end %>
+</tbody>
+</table>
+
