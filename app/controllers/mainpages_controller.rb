@@ -4,6 +4,6 @@ class MainpagesController < ApplicationController
 
   def show
     @search = User.ransack(params[:q])
-    @users = @search.result
+    @users = @search.result.page(params[:page]).per(2)
   end
 end
