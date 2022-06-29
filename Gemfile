@@ -73,3 +73,5 @@ end
 gem "devise"
 
 gem "devise_invitable", "~> 2.0.0"
+
+gem "ransack", "~> 3.2"
