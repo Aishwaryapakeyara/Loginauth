@@ -20,7 +20,7 @@ gem "importmap-rails"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
-
+gem "pry"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
@@ -73,3 +73,5 @@ end
 gem "devise"
 
 gem "devise_invitable", "~> 2.0.0"
+
+gem "pundit", "~> 2.2"
