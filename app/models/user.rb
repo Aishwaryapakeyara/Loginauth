@@ -4,4 +4,13 @@ class User < ApplicationRecord
   devise :invitable, :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :trackable, :confirmable
+  belongs_to :role
+
+  def admin?
+    self.role_id == 1
+  end
+
+  def user?
+    self.role_id == 2
+  end
 end
